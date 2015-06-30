@@ -1,0 +1,70 @@
+﻿<UserControl x:Name="conCustList" x:Class="MyAABExample.Views.CustList"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:helpers="clr-namespace:MyAABExample.Helper">
+    <UserControl.Resources>
+       
+      
+    </UserControl.Resources>
+    
+
+    <Grid  Margin="0,0,-0.226,9.774" Background="{DynamicResource WindowBackgroundBrush}">
+           
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        
+        <Border Padding="5"
+                Margin="4"
+                CornerRadius="5"
+                Background="{StaticResource HoverBrush}">
+        <TextBlock Grid.Column="0" Grid.Row="0" Text="Customer List View" 
+                   TextWrapping="Wrap" Grid.RowSpan="1" 
+                   Width="Auto"
+                   FontSize="12" 
+                   Foreground="#FFEFF0E8" 
+                   Margin="8,8,8,8" FontWeight="Bold"
+                   />
+        </Border>
+        <Button x:Name="AddCustomer" Grid.Row="3"  Margin="8,8,8,8" 
+                Width="90" Command="{Binding Add_Customer}" >Add Customer</Button>
+             
+        
+        <DataGrid x:Name="CustomerGrid"  
+                  HorizontalAlignment="Left"
+                  Grid.Row="1"
+                 
+                  Grid.Column="0" Grid.ColumnSpan="2"
+                  Margin="8" 
+                  VerticalAlignment="Top" 
+                  ItemsSource="{Binding Customers, Mode=TwoWay}"
+                  SelectedItem="{Binding SelectedCustomer}"
+                  helpers:RowDoubleClickHandler.MethodName="Edit"
+                  FontSize="12"
+                  AutoGenerateColumns="False"
+                  AutomationProperties.AutomationId="EmployeesListGrid" 
+                  IsReadOnly="True" 
+                  BorderBrush="{DynamicResource HoverShineBrush}" 
+                  Background="{DynamicResource DisabledBackgroundBrush}"
+                  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding CustomerID,Mode=TwoWay, UpdateSourceTrigger=LostFocus}" IsReadOnly="True" Width="*"/>
+                <DataGridTextColumn Header="First Name" Binding="{Binding CustomerFirstName, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" IsReadOnly="True" Width="*"/>
+                <DataGridTextColumn Header="Last Name" Binding="{Binding CustomerLastName, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" IsReadOnly="True" Width="*"/>
+                <DataGridTextColumn Header="Address" Binding="{Binding Address, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" IsReadOnly="True" Width="*"/>
+                <DataGridTextColumn Header="City" Binding="{Binding City, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" IsReadOnly="True" Width="*"/>
+                <DataGridTextColumn Header="St" Binding="{Binding St, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" IsReadOnly="True" Width="*"/>
+                <DataGridTextColumn Header="Zip" Binding="{Binding Zip, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" IsReadOnly="True" Width="*"/>
+                <DataGridTextColumn Header="Country" Binding="{Binding Country, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" IsReadOnly="True" Width="*"/>
+                <DataGridTextColumn Header="Phone" Binding="{Binding PhoneNumber, Mode=TwoWay, UpdateSourceTrigger=LostFocus}" IsReadOnly="True" Width="*"/>
+            </DataGrid.Columns>
+            
+        </DataGrid>
+
+    </Grid>
+</UserControl>

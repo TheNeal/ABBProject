@@ -1,0 +1,10 @@
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\DAL\bin\Debug\DAL.dll.config
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\DAL\bin\Debug\DAL.dll
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\DAL\bin\Debug\DAL.pdb
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\DAL\obj\Debug\DAL.dll
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\DAL\obj\Debug\DAL.pdb

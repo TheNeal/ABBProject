@@ -1,0 +1,12 @@
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\UnitTestProject1\bin\Debug\UnitTestProject1.dll.config
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\UnitTestProject1\bin\Debug\DAL.dll
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\UnitTestProject1\bin\Debug\EntityFramework.dll
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\UnitTestProject1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\UnitTestProject1\bin\Debug\DAL.pdb
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\UnitTestProject1\bin\Debug\EntityFramework.xml
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\UnitTestProject1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
