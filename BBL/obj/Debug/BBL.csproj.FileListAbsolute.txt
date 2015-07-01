@@ -7,3 +7,12 @@ C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\BBL\bin\Debug\E
 C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\BBL\obj\Debug\BBL.csprojResolveAssemblyReference.cache
 C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\BBL\obj\Debug\BBL.dll
 C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\BBL\obj\Debug\BBL.pdb
+C:\Users\Neal\Documents\GitHub\ABBProject\BBL\bin\Debug\BBL.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\BBL\bin\Debug\BBL.pdb
+C:\Users\Neal\Documents\GitHub\ABBProject\BBL\bin\Debug\DAL.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\BBL\bin\Debug\EntityFramework.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\BBL\bin\Debug\DAL.pdb
+C:\Users\Neal\Documents\GitHub\ABBProject\BBL\bin\Debug\EntityFramework.xml
+C:\Users\Neal\Documents\GitHub\ABBProject\BBL\obj\Debug\BBL.csprojResolveAssemblyReference.cache
+C:\Users\Neal\Documents\GitHub\ABBProject\BBL\obj\Debug\BBL.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\BBL\obj\Debug\BBL.pdb
