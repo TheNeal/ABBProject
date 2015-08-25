@@ -14,6 +14,12 @@
         <AssociationConnector Association="ABBModel.FK_Items_Categories" ManuallyRouted="false" />
         <AssociationConnector Association="ABBModel.FK_Products_Companies" ManuallyRouted="false" />
         <AssociationConnector Association="ABBModel.FK_OrderHead_Customers" />
+        <EntityTypeShape EntityType="ABBModel.BuildList" Width="1.5" PointX="5.625" PointY="5.25" />
+        <EntityTypeShape EntityType="ABBModel.Inventory" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="ABBModel.InventoryHistory" Width="1.5" PointX="2.75" PointY="6.75" />
+        <EntityTypeShape EntityType="ABBModel.InventoryReconcile" Width="1.5" PointX="7.75" PointY="6.75" />
+        <AssociationConnector Association="ABBModel.FK_BuildList_Items" />
+        <AssociationConnector Association="ABBModel.FK_BuildList_Products" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

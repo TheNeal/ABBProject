@@ -15,6 +15,5 @@ C:\Users\Neal\Documents\GitHub\ABBProject\DAL\bin\Debug\EntityFramework.dll
 C:\Users\Neal\Documents\GitHub\ABBProject\DAL\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Neal\Documents\GitHub\ABBProject\DAL\bin\Debug\EntityFramework.xml
 C:\Users\Neal\Documents\GitHub\ABBProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Neal\Documents\GitHub\ABBProject\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\Neal\Documents\GitHub\ABBProject\DAL\obj\Debug\DAL.dll
 C:\Users\Neal\Documents\GitHub\ABBProject\DAL\obj\Debug\DAL.pdb

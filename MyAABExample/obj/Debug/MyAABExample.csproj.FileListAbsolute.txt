@@ -75,14 +75,14 @@ C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\MyAABExample\ob
 C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\MyAABExample\obj\Debug\Views\CompanyView.g.cs
 C:\Users\Neal\Documents\Visual Studio 2013\Projects\MyAABExample\MyAABExample\obj\Debug\Views\ProductView.g.cs
 C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\MyAABExample.exe.config
-C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\obj\Debug\MyAABExample.exe
-C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\obj\Debug\MyAABExample.pdb
 C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\MyAABExample.exe
 C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\MyAABExample.pdb
 C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\BBL.dll
 C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\DAL.dll
 C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\EntityFramework.dll
 C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\Microsoft.Expression.Effects.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\Microsoft.Expression.Interactions.dll
 C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\Microsoft.Practices.Prism.Composition.dll
 C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\Microsoft.Practices.Prism.Interactivity.dll
 C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\Microsoft.Practices.Prism.Mvvm.Desktop.dll
@@ -109,6 +109,25 @@ C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\Microsoft.Pract
 C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\Microsoft.Practices.Unity.xml
 C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
 C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\de\Microsoft.Expression.Effects.resources.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\es\Microsoft.Expression.Effects.resources.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\fr\Microsoft.Expression.Effects.resources.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\it\Microsoft.Expression.Effects.resources.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\ja\Microsoft.Expression.Effects.resources.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\ko\Microsoft.Expression.Effects.resources.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\ru\Microsoft.Expression.Effects.resources.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\zh-Hans\Microsoft.Expression.Effects.resources.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\zh-Hant\Microsoft.Expression.Effects.resources.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\ru\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
 C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\de\System.Windows.Interactivity.resources.dll
 C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\en\System.Windows.Interactivity.resources.dll
 C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\bin\Debug\es\System.Windows.Interactivity.resources.dll
@@ -149,3 +168,5 @@ C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\obj\Debug\Views\CustList.
 C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\obj\Debug\MyAABExample.g.resources
 C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\obj\Debug\MyAABExample.Properties.Resources.resources
 C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\obj\Debug\MyAABExample.csproj.GenerateResource.Cache
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\obj\Debug\MyAABExample.exe
+C:\Users\Neal\Documents\GitHub\ABBProject\MyAABExample\obj\Debug\MyAABExample.pdb

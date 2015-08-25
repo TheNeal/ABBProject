@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="ABBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BuildList">
+    <Key>
+      <PropertyRef Name="BuildListID" />
+    </Key>
+    <Property Name="BuildListID" Type="int" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="ItemID" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+  </EntityType>
   <EntityType Name="Categories">
     <Key>
       <PropertyRef Name="CategoryId" />
@@ -28,6 +37,34 @@
     <Property Name="Country" Type="char" MaxLength="30" />
     <Property Name="Zip" Type="char" MaxLength="12" />
   </EntityType>
+  <EntityType Name="Inventory">
+    <Key>
+      <PropertyRef Name="InventoryID" />
+    </Key>
+    <Property Name="InventoryID" Type="int" Nullable="false" />
+    <Property Name="ItemID" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InventoryHistory">
+    <Key>
+      <PropertyRef Name="InventoryHistoryID" />
+    </Key>
+    <Property Name="InventoryHistoryID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="ItemID" Type="int" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="TransCode" Type="char" MaxLength="1" />
+    <Property Name="InvoiceNumber" Type="nchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="InventoryReconcile">
+    <Key>
+      <PropertyRef Name="InventoryReconcileID" />
+    </Key>
+    <Property Name="InventoryReconcileID" Type="int" Nullable="false" />
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="RecQuantity" Type="int" Nullable="false" />
+    <Property Name="CountedQuantity" Type="int" Nullable="false" />
+  </EntityType>
   <EntityType Name="Items">
     <Key>
       <PropertyRef Name="ItemId" />
@@ -54,6 +91,30 @@
     <Property Name="CompanyID" Type="int" />
     <Property Name="Description" Type="nvarchar" MaxLength="1000" />
   </EntityType>
+  <Association Name="FK_BuildList_Items">
+    <End Role="Items" Type="Self.Items" Multiplicity="1" />
+    <End Role="BuildList" Type="Self.BuildList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Items">
+        <PropertyRef Name="ItemId" />
+      </Principal>
+      <Dependent Role="BuildList">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BuildList_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="BuildList" Type="Self.BuildList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="BuildList">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Items_Categories">
     <End Role="Categories" Type="Self.Categories" Multiplicity="1" />
     <End Role="Items" Type="Self.Items" Multiplicity="*" />
@@ -91,12 +152,24 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="ABBModelStoreContainer">
+    <EntitySet Name="BuildList" EntityType="Self.BuildList" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Companies" EntityType="Self.Companies" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Inventory" EntityType="Self.Inventory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InventoryHistory" EntityType="Self.InventoryHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InventoryReconcile" EntityType="Self.InventoryReconcile" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Items" EntityType="Self.Items" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="OrderHead" EntityType="Self.OrderHead" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_BuildList_Items" Association="Self.FK_BuildList_Items">
+      <End Role="Items" EntitySet="Items" />
+      <End Role="BuildList" EntitySet="BuildList" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BuildList_Products" Association="Self.FK_BuildList_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="BuildList" EntitySet="BuildList" />
+    </AssociationSet>
     <AssociationSet Name="FK_Items_Categories" Association="Self.FK_Items_Categories">
       <End Role="Categories" EntitySet="Categories" />
       <End Role="Items" EntitySet="Items" />

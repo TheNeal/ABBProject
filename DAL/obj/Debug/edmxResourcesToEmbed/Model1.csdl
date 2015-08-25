@@ -39,6 +39,7 @@
     <Property Name="ItemName" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
     <Property Name="CategoryId" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Category" Relationship="Self.FK_Items_Categories" FromRole="Items" ToRole="Categories" />
+    <NavigationProperty Name="BuildLists" Relationship="ABBModel.FK_BuildList_Items" FromRole="Item" ToRole="BuildList" />
   </EntityType>
   <EntityType Name="OrderHead">
     <Key>
@@ -59,6 +60,7 @@
     <Property Name="CompanyID" Type="Int32" />
     <NavigationProperty Name="Company" Relationship="Self.FK_Products_Companies" FromRole="Products" ToRole="Companies" />
     <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="BuildLists" Relationship="ABBModel.FK_BuildList_Products" FromRole="Product" ToRole="BuildList" />
   </EntityType>
   <Association Name="FK_Items_Categories">
     <End Role="Categories" Type="Self.Category" Multiplicity="1" />
@@ -103,6 +105,18 @@
       <End Role="Customer" EntitySet="Customers" />
       <End Role="OrderHead" EntitySet="OrderHeads" />
     </AssociationSet>
+    <EntitySet Name="BuildLists" EntityType="ABBModel.BuildList" />
+    <EntitySet Name="Inventories" EntityType="ABBModel.Inventory" />
+    <EntitySet Name="InventoryHistories" EntityType="ABBModel.InventoryHistory" />
+    <EntitySet Name="InventoryReconciles" EntityType="ABBModel.InventoryReconcile" />
+    <AssociationSet Name="FK_BuildList_Items" Association="ABBModel.FK_BuildList_Items">
+      <End Role="Item" EntitySet="Items" />
+      <End Role="BuildList" EntitySet="BuildLists" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BuildList_Products" Association="ABBModel.FK_BuildList_Products">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="BuildList" EntitySet="BuildLists" />
+    </AssociationSet>
   </EntityContainer>
   <Association Name="FK_OrderHead_Customers">
     <End Type="ABBModel.Customer" Role="Customer" Multiplicity="1" />
@@ -113,6 +127,69 @@
       </Principal>
       <Dependent Role="OrderHead">
         <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="BuildList">
+    <Key>
+      <PropertyRef Name="BuildListID" />
+    </Key>
+    <Property Name="BuildListID" Type="Int32" Nullable="false" />
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="ItemID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Item" Relationship="ABBModel.FK_BuildList_Items" FromRole="BuildList" ToRole="Item" />
+    <NavigationProperty Name="Product" Relationship="ABBModel.FK_BuildList_Products" FromRole="BuildList" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Inventory">
+    <Key>
+      <PropertyRef Name="InventoryID" />
+    </Key>
+    <Property Name="InventoryID" Type="Int32" Nullable="false" />
+    <Property Name="ItemID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InventoryHistory">
+    <Key>
+      <PropertyRef Name="InventoryHistoryID" />
+    </Key>
+    <Property Name="InventoryHistoryID" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="ItemID" Type="Int32" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="TransCode" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="InvoiceNumber" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="InventoryReconcile">
+    <Key>
+      <PropertyRef Name="InventoryReconcileID" />
+    </Key>
+    <Property Name="InventoryReconcileID" Type="Int32" Nullable="false" />
+    <Property Name="ItemId" Type="Int32" Nullable="false" />
+    <Property Name="RecQuantity" Type="Int32" Nullable="false" />
+    <Property Name="CountedQuantity" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_BuildList_Items">
+    <End Type="ABBModel.Item" Role="Item" Multiplicity="1" />
+    <End Type="ABBModel.BuildList" Role="BuildList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Item">
+        <PropertyRef Name="ItemId" />
+      </Principal>
+      <Dependent Role="BuildList">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BuildList_Products">
+    <End Type="ABBModel.Product" Role="Product" Multiplicity="1" />
+    <End Type="ABBModel.BuildList" Role="BuildList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="BuildList">
+        <PropertyRef Name="ProductID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

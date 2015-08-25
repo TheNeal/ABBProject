@@ -31,5 +31,9 @@ namespace DAL
         public virtual DbSet<Item> Items { get; set; }
         public virtual DbSet<OrderHead> OrderHeads { get; set; }
         public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<BuildList> BuildLists { get; set; }
+        public virtual DbSet<Inventory> Inventories { get; set; }
+        public virtual DbSet<InventoryHistory> InventoryHistories { get; set; }
+        public virtual DbSet<InventoryReconcile> InventoryReconciles { get; set; }
     }
 }

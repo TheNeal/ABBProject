@@ -14,10 +14,16 @@ namespace DAL
     
     public partial class Item
     {
+        public Item()
+        {
+            this.BuildLists = new HashSet<BuildList>();
+        }
+    
         public int ItemId { get; set; }
         public string ItemName { get; set; }
         public int CategoryId { get; set; }
     
         public virtual Category Category { get; set; }
+        public virtual ICollection<BuildList> BuildLists { get; set; }
     }
 }

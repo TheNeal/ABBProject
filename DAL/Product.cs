@@ -14,6 +14,11 @@ namespace DAL
     
     public partial class Product
     {
+        public Product()
+        {
+            this.BuildLists = new HashSet<BuildList>();
+        }
+    
         public int ProductId { get; set; }
         public string ProductName { get; set; }
         public Nullable<decimal> ProductBasePrice { get; set; }
@@ -21,5 +26,6 @@ namespace DAL
         public string Description { get; set; }
     
         public virtual Company Company { get; set; }
+        public virtual ICollection<BuildList> BuildLists { get; set; }
     }
 }
